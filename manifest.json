@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "HTTPSonly",
+  "author": "John DeSalvo", 
+  "version": "1.0",
+  "icons": {
+    "24": "icons/shield-on.png",
+    "48": "icons/shield-on.png",
+    "96": "icons/shield-on.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/shield-off.png",
+    "default_title": "HTTPSonly"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ]
+}
